@@ -1,0 +1,2 @@
+aws lambda create-function --function-name db-api --runtime nodejs6.10 --role arn:aws:iam::128127626817:role/lambda-dynamodb-execution-role --handler index.handler --zip-file fileb://C:/Users/User/Projects/Node.js/aws/db-api.zip --memory-size 512 --timeout 10
+aws iam create-role --role-name LambdaServiceRole --assume-role-policy-document file://C:/Users/User/Projects/Node.js/aws/lambda-trust-policy.json
